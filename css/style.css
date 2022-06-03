@@ -23,7 +23,7 @@
 
 .hero {
   min-height: 50vh;
-  background: #000 url(/A4S/image/board.png) center center no-repeat;
+  background: #000 url(../image/board.png) center center no-repeat;
   background-size: cover;
   position: relative;
 }
