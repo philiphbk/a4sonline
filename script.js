@@ -8,3 +8,13 @@ $(window).scroll(function () {
     filter: "blur(" + scroll / 200 + "px)",
   });
 });
+
+
+$(".card-trigger").on("click", function (e) {
+  e.preventDefault();
+  $(this).closest(".card").addClass("card--flipped");
+});
+
+$(".card-close").on("click", function () {
+  $(this).closest(".card").removeClass("card--flipped");
+});
