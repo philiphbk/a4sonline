@@ -18,3 +18,8 @@ $(".card-trigger").on("click", function (e) {
 $(".card-close").on("click", function () {
   $(this).closest(".card").removeClass("card--flipped");
 });
+
+const collapseElementList = document.querySelectorAll(".collapse");
+const collapseList = [...collapseElementList].map(
+  (collapseEl) => new bootstrap.Collapse(collapseEl)
+);
