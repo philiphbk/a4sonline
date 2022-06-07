@@ -23,3 +23,23 @@ const collapseElementList = document.querySelectorAll(".collapse");
 const collapseList = [...collapseElementList].map(
   (collapseEl) => new bootstrap.Collapse(collapseEl)
 );
+
+function sendEmail(){
+  Email.send({
+    Host: "smtp.a4sonline.com",
+    Username: "info@a4sonline.com",
+    Password: "password",
+    To: "info@a4sonline.com",
+    From: document.getElementById("email").value,
+    Subject: "New Contact Form Enquiry",
+    Body:
+      "Name: " +
+      document.getElementById("identity").value +
+      "<br> Email: " +
+      document.getElementById("email").value +
+      "<br> Phone No: " +
+      document.getElementById("telephone").value +
+      "<br> Message: " +
+      document.getElementById("Message").value,
+  }).then((message) => alert("Message Sent Successfully"));
+}

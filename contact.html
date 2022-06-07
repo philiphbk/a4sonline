@@ -27,18 +27,16 @@
 </head>
 
 <body>
-  <header class="py-3 border-bottom">
+  <header class="py-3 sticky-top bg-white">
     <div class="container sticky-top d-flex flex-wrap justify-content-center">
       <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
         <svg class="bi me-2" width="40" height="32">
           <use xlink:href="/image/A4slogo.png"></use>
         </svg>
-        <img src="image/A4slogo2.png" alt="" width="120" height="64" class="d-inline-block align-text-top">
-        <span class="fs-5 mx-2" style="font-weight:bold;">Audit, Advisory, Assurance and Assessment Services (A4S)
-          Limited</span>
+        <img src="image/A4slogo2.png" alt="" width="200" height="109" class="d-inline-block align-text-top">
+        <!-- <span class="fs-5 mx-2" style="font-weight:bold;">Audit, Advisory, Assurance and Assessment Services (A4S)
+                Limited</span> -->
       </a>
-
-
     </div>
   </header>
   <nav class="py-2 bg-primary">
@@ -52,6 +50,16 @@
       </ul>
     </div>
   </nav>
+
+  <header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
+  </header>
 
   <section style="background-image: url('image/contact.jpg'); background-size: cover; ">
     <div class="px-4 py-5 text-center">
@@ -162,7 +170,37 @@
     </div>
   </div>
 
-
+  <div class="container ">
+    <div class="row">
+      <div class="col-4">
+    
+      </div>
+      <div class="col-4">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3>GET IN TOUCH</h3>
+          <div class="mb-3">
+            <label for="form-control class=" form-label">Your Name</label>
+            <input type="text" class="form-control" name="identity" id="identity" placeholder="Your Full Name">
+          </div>
+          <div class="mb-3">
+            <label for="FormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="form-controlTel" class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" id="telephone" placeholder="0XX-XXXX-XXXX">
+          </div>
+          <div class="mb-3">
+            <label for="FormControlTextarea1" class="form-label">How can we Help you?</label>
+            <textarea class="form-control" id="Message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send</button>
+        </form>
+      </div>
+      <div class="col-4"></div>
+    </div>
+    
+  </div>
 
 
 
@@ -255,6 +293,7 @@
       </div>
   </footer>
   <script>AOS.init();</script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
