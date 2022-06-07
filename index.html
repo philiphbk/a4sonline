@@ -28,41 +28,106 @@
 
 <body>
 
-  <header class="py-3 border-bottom">
-    <div class="container sticky-top d-flex flex-wrap justify-content-center">
-      <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="/image/A4slogo.png"></use>
-        </svg>
-        <img src="image/A4slogo2.png" alt="" width="120" height="64" class="d-inline-block align-text-top">
-        <span class="fs-5 mx-2" style="font-weight:bold;">Audit, Advisory, Assurance and Assessment Services (A4S)
-          Limited</span>
-      </a>
-
-
+  
+    <nav class="py-3 bg-success">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link link-light px-2 active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link link-light px-2">Our Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link link-light px-2">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link link-light px-2">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="py-3 sticky-top bg-light">
+      <div class="container sticky-top d-flex flex-wrap justify-content-center">
+        <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="/image/A4slogo.png"></use>
+          </svg>
+          <img src="image/A4slogo2.png" alt="" width="200" height="109" class="d-inline-block align-text-top">
+          <!-- <span class="fs-5 mx-2" style="font-weight:bold;">Audit, Advisory, Assurance and Assessment Services (A4S)
+              Limited</span> -->
+        </a>
+      </div>
+    </header>
+    <nav class="py-2 bg-primary">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link link-light px-2 active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link link-light px-2">Our Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link link-light px-2">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link link-light px-2">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+  <section>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="./image/board.png" alt="" aria-hidden="true"  preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777"></rect>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="./image/hero.jpg" alt="" aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777"></rect>    
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="100%" src="./image/hero3.jpg" alt="" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777"></rect>
+    
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </header>
-  <nav class="py-2 bg-primary border-bottom">
-    <div class="container d-flex flex-wrap">
-      <ul class="nav me-auto">
-        <li class="nav-item"><a href="index.html" class="nav-link link-light px-2 active" aria-current="page">Home</a>
-        </li>
-        <li class="nav-item"><a href="services.html" class="nav-link link-light px-2">Our Services</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link link-light px-2">About</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link link-light px-2">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  </section>
 
-
-
-  <section class="hero" data-aos="fade-in">
+  <!-- <section class="hero" data-aos="fade-in">
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
           <!-- <img src="https://img.icons8.com/fluency/466/undefined/certification.png" class="d-block mx-lg-auto img-fluid"
             alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
-        </div>
+       <!-- </div>
         <div class="col-lg-6" data-aos="zoom-in">
           <h1 class="display-5 fw-bold text-dark lh-1 mb-3">Standards & Best Practice</h1>
           <p class="lead fw-bold">We soIve business problems/Challenges using Best Practice frameworks, ISO Standards +
@@ -75,7 +140,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <main>
     <div class="container px-4 py-5" id="icon-grid">
@@ -259,7 +324,7 @@
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 fw-bold text-dark">Audit, Advisory, Assurance and Assessment
+          <h5 class="text-uppercase mb-4 fw-bold text-white">Audit, Advisory, Assurance and Assessment
             Services (A4S)
             Limited</h5>
           <p>We solve business problems/Challenges using Best Practices Frameworks, ISO Standards & Technology
@@ -268,7 +333,7 @@
         </div>
 
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 fw-bold text-dark">A4s Online</h5>
+          <h5 class="text-uppercase mb-4 fw-bold text-white">A4s Online</h5>
           <p>
             <a href="about.html" class="text-white" style="text-decoration: none"> About Us</a>
           </p>
@@ -285,7 +350,7 @@
         </div>
 
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 fw-bold text-dark">Useful Links</h5>
+          <h5 class="text-uppercase mb-4 fw-bold text-light">Useful Links</h5>
             <p>
               <a href="#" class="text-white" style="text-decoration: none">Blog</a>
             </p>
@@ -327,7 +392,7 @@
           <div class="col-md-7 col-lg-8">
             <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2022 All rights reserved by:
               <a href="#" style="text-decoration: none;">
-                <strong class="text-dark">A4S Online</strong>
+                <strong class="text-light">A4S Online</strong>
               </a>
             </p>
           </div>
