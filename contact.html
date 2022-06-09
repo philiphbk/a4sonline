@@ -27,83 +27,127 @@
 </head>
 
 <body>
-  <header class="py-3 sticky-top bg-white">
-    <div class="container sticky-top d-flex flex-wrap justify-content-center">
-      <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="/image/A4slogo.png"></use>
-        </svg>
-        <img src="image/A4slogo2.png" alt="" width="200" height="109" class="d-inline-block align-text-top">
-        <!-- <span class="fs-5 mx-2" style="font-weight:bold;">Audit, Advisory, Assurance and Assessment Services (A4S)
-                Limited</span> -->
-      </a>
-    </div>
-  </header>
-  <nav class="py-3 bg-primary">
-    <div class="container d-flex justify-content-center">
-      <ul class="nav">
-        <li class="nav-item"><a href="index.html" class="nav-link link-light px-2">Home</a>
-        </li>
-        <li class="nav-item"><a href="services.html" class="nav-link link-light px-2">Our Services</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link link-light px-2">About</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link link-light px-2 active"
-            aria-current="page">Contact</a></li>
+  <div class="d-flex gap-lg-5 bg-warning py-1">
+    <div class="container d-inline-flex justify-content-evenly align-content-sm-between">
+      <ul class="nav fw-bold">
+        <li class="nav-item px-xxl-5 align-content-lg-start">GHANA</li>
+        <div class="vr"></div>
+        <li class="nav-item px-xxl-5">NIGERIA</li>
+        <div class="vr"></div>
+        <li class="nav-item px-xxl-5">info@a4sonline.com</li>
       </ul>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand px-xxl-5" href="#">
+        <img src="image/A4slogo2.png" alt="a4sonline" width="155" height="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav px-lg-5 fw-bold h4 text-danger">
+          <li class="nav-item">
+            <a class="nav-link link-danger" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-danger" href="services.html">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-danger" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active link-dark" aria-current="page" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-
-
-  <section style="background-image: url('image/contact.jpg'); background-size: cover; ">
-    <div class="px-4 py-5 text-center">
-      <h1 class="display-5 fw-bold text-dark">Contact</h1>
-      <div class="col-lg-6 mx-auto text-dark">
-        <p class="lead mb-4">What do you inquire?</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-
+  <section class="contact-head">
+    <div class="container col-xxl-8 px-2 py-5 ">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+        </div>
+        <div class="col-lg-6 text-white">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Contact</h1>
+          <p class="lead">What do you inquire?</p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
         </div>
       </div>
     </div>
   </section>
 
 
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <p class="my-0 fw-normal">
+              <b>Nigeria:</b><br> 2 Bamishile Street, Off Allen Avenue, Ikeja, Lagos
+            </p><br>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>
+              damilola.disu@a4sonline.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +234 808 349 5376
+            </p>
+          </li>
+          <li class="list-group-item">
+            <p class="my-0 fw-normal">
+              <b>Ghana:</b><br>C789/3 Mango Tree Avenue, Asylum Down, Accra, Ghana 0272733
+            </p><br>
+            <p><i class="fas fa-envelope mr-3"></i>
+              larry.ansong@a4sonline.com</p>
+  
+            <p><i class="fas fa-phone mr-3"></i> +233 24 472 0138</p>
+          </li>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3>GET IN TOUCH</h3>
+          <div class="mb-3">
+            <label for="form-control class=" form-label">Your Name</label>
+            <input type="text" class="form-control" name="identity" id="identity" placeholder="Your Full Name">
+          </div>
+          <div class="mb-3">
+            <label for="FormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="form-controlTel" class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" id="telephone" placeholder="0XX-XXXX-XXXX">
+          </div>
+          <div class="mb-3">
+            <label for="FormControlTextarea1" class="form-label">How can we Help you?</label>
+            <textarea class="form-control" id="Message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-
-  <section class="container py-5">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">
-        <h4 class="my-0 fw-normal">
-          <i class="fa fa-location-arrow" aria-hidden="true"></i>
-          <br></i><b>Nigeria:</b><br> 2 Bamishile Street, Off Allen Avenue, Ikeja, Lagos
-        </h4><br>
-        <p>
-          <i class="fas fa-envelope mr-3"></i>
-          damilola.disu@a4sonline.com
-        </p>
-        <p>
-          <i class="fas fa-phone mr-3"></i> +234 808 349 5376
-        </p>
-      </li>
-      <li class="list-group-item">
-        <h4 class="my-0 fw-normal">
-          <i class="fa fa-location-arrow" aria-hidden="true"></i>
-          <br></i><b>Ghana:</b><br>C789/3 Mango Tree Avenue, Asylum Down, Accra, Ghana 0272733
-        </h4><br>
-        <p><i class="fas fa-envelope mr-3"></i>
-          larry.ansong@a4sonline.com</p>
-
-        <p><i class="fas fa-phone mr-3"></i> +233 24 472 0138</p>
-      </li>
-      </li>
-
-    </ul>
-  </section>
+  
 
 <hr>
   <!--Nigeria Map-->
   <div class="container py-5">
     <div class="row">
-      <div class="col">
+      <div class="col-6">
         <h4 class="text-bold">Nigeria Address</h4>
         <div class="mapouter">
           <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
@@ -128,13 +172,9 @@
             </style>
           </div>
         </div>
-
-
-
       </div>
-
       <!--Ghana map-->
-      <div class="col">
+      <div class="col-6">
         <h4 class="text-bold">Ghana Address</h4>
         <div class="mapouter">
           <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
@@ -164,37 +204,7 @@
   </div>
 
   <hr>
-  <div class="container ">
-    <div class="row">
-      <div class="col-6">
-        <img src="./image/email.jpg" class="img-thumbnail" alt="...">
-      </div>
-      <div class="col-6">
-        <form onsubmit="sendEmail(); reset(); return false;">
-          <h3>GET IN TOUCH</h3>
-          <div class="mb-3">
-            <label for="form-control class=" form-label">Your Name</label>
-            <input type="text" class="form-control" name="identity" id="identity" placeholder="Your Full Name">
-          </div>
-          <div class="mb-3">
-            <label for="FormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="form-controlTel" class="form-label">Mobile Number</label>
-            <input type="tel" class="form-control" id="telephone" placeholder="0XX-XXXX-XXXX">
-          </div>
-          <div class="mb-3">
-            <label for="FormControlTextarea1" class="form-label">How can we Help you?</label>
-            <textarea class="form-control" id="Message" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-success">Send</button>
-        </form>
-      </div>
-      
-    </div>
-    
-  </div>
+ 
 
 
 
@@ -202,19 +212,21 @@
   <br>
 
   <!---Footer -->
-  <footer class="bg-primary text-white pt-5 pb-4" >
-    <div class="container text-center text-md-left" data-aos="slide-up">
-      <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 fw-bold text-white">Audit, Advisory, Assurance and Assessment
-            Services (A4S)
-            Limited</h5>
+  <footer class="footer-img text-white pt-5 pb-4">
+  
+    <div class="container text-md-left" data-aos="slide-up">
+  
+      <hr>
+      <div class="row text-md-left">
+        <div class="col-md-6 col-lg-4 col-xl-6 mx-auto mt-3">
+          <h4 class="text-uppercase mb-4 fw-bold text-white">About Us</h4>
           <p>We solve business problems/Challenges using Best Practices Frameworks, ISO Standards & Technology
-            Solutions. We
-            truly guarantee transformational results</p>
+            Solutions. We truly guarantee transformational results</p>
+          <button type="button" class="btn btn-outline-light">Read More</button>
+  
         </div>
-
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+  
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 fw-bold text-white">A4s Online</h5>
           <p>
             <a href="about.html" class="text-white" style="text-decoration: none"> About Us</a>
@@ -226,28 +238,14 @@
             <a href="#" class="text-white" style="text-decoration: none"> Partners</a>
           </p>
           <p>
-            <a href="#" class="text-white" style="text-decoration: none">Contact</a>
+            <a href="contact.html" class="text-white" style="text-decoration: none">Contact</a>
           </p>
-
+  
         </div>
-
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 fw-bold text-white">Useful Links</h5>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none">Blog</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none">FAQs</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none">Sponsors</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none">Help</a>
-          </p>
-        </div>
-
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+  
+  
+  
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <div class="text-center text-md-right">
             <ul class="list-unstyled list-inline">
               <li class="list-inline-item">
@@ -264,13 +262,13 @@
               </li>
             </ul>
           </div>
-
+  
         </div>
-
+  
         <hr class="mb-4">
-
+  
         <div class="row align-items-center">
-
+  
           <div class="col-md-7 col-lg-8">
             <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2022 All rights reserved by:
               <a href="#" style="text-decoration: none;">
@@ -278,11 +276,11 @@
               </a>
             </p>
           </div>
-
+  
           <div class="col-md-5 col-lg-4">
             <a href="#" class="text-white">Back to top <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
           </div>
-
+  
         </div>
       </div>
   </footer>

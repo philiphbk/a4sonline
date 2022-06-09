@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/573fef0d7a.js" crossorigin="anonymous"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,33 +25,50 @@
 </head>
 
 <body>
-  <header class="py-3 sticky-top bg-white">
-    <div class="container sticky-top d-flex flex-wrap justify-content-center">
-      <a href="about.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="/image/A4slogo.png"></use>
-        </svg>
-        <img src="image/A4slogo2.png" alt="" width="200" height="109" class="d-inline-block align-text-top">
-       
-      </a>
-    </div>
-  </header>
-  <nav class="py-3 bg-primary">
-    <div class="container d-flex justify-content-center">
-      <ul class="nav">
-        <li class="nav-item"><a href="index.html" class="nav-link link-light px-2">Home</a>
-        </li>
-        <li class="nav-item"><a href="services.html" class="nav-link link-light px-2" >Our
-            Services</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link link-light px-2 active" aria-current="page">About</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link link-light px-2">Contact</a></li>
+  <div class="d-flex gap-lg-5 bg-warning py-1">
+    <div class="container d-inline-flex justify-content-evenly align-content-sm-between">
+      <ul class="nav fw-bold">
+        <li class="nav-item px-xxl-5">GHANA</li>
+        <div class="vr"></div>
+        <li class="nav-item px-xxl-5">NIGERIA</li>
+        <div class="vr"></div>
+        <li class="nav-item px-xxl-5">info@a4sonline.com</li>
       </ul>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand px-xxl-5" href="#">
+        <img src="image/A4slogo2.png" alt="a4sonline" width="155" height="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav px-lg-5 fw-bold h4 text-danger">
+          <li class="nav-item">
+            <a class="nav-link link-danger" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-danger" href="services.html">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark active" aria-current="page" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-danger" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
 
 
-  <section style="background-image: url('image/book.jpg'); background-size: cover; ">
+  <section class="about-header">
     <div class="container col-xxl-8 px-2 py-5 ">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -59,6 +76,12 @@
         <div class="col-lg-6 text-white">
           <h1 class="display-5 fw-bold lh-1 mb-3">About Us</h1>
           <p class="lead">What do we stand for?</p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">About</li>
+            </ol>
+          </nav>
         </div>
       </div>
     </div>
@@ -76,363 +99,279 @@
             height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3">Best Practice:</h1>
-          <p class="lead">We work to deliver Strategy and Business Process Improvement initiatives using Best Practice and frameworks including Balanced scorecard, Business Process Modeling Notation (BPMNL), Change Management with PROSCI and CMBOK, SUPPLY Chain Management with SCOR, Business AnalYsis with BABOK, Process Management with APQC and Lean Six Sigma, Programme Management with MSP, Project Management with PMBOK and PRINCE2, Enterprise Architecture with TOGAF, IT Governance with COBIT, IT Service Management with ITIL, Agile with SCRUM and many others.</p>
+          <h1 class="display-5 fw-bold lh-1 mb-3">Advisory and Assessment Services for 30 Best Practice:</h1>
+          <p class="lead">We work to deliver Strategy and Business Process Improvement initiatives using Best Practice
+            and frameworks including Balanced scorecard, Business Process Modeling Notation (BPMNL), Change Management
+            with PROSCI and CMBOK, SUPPLY Chain Management with SCOR, Business Analysis with BABOK, Process Management
+            with APQC and Lean Six Sigma, Programme Management with MSP, Project Management with PMBOK and PRINCE2,
+            Enterprise Architecture with TOGAF, IT Governance with COBIT, IT Service Management with ITIL, Agile with
+            SCRUM and many others.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          
+
           </div>
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3">ISO Standards:</h1>
-          <p class="lead">We strategically work with PECB (Accredited ISO Certification Body) in Canada to drive ISO standards adoption across Africa. We also worK with various organization in different capacities with regards to ISO
-          Implementations and Audits. Some of the ISO Standards we specialize in include 9001 (QualitY), ISO 22301
-          (Business continuity), ISO 27001 (Information Security), ISO 20000 (IT service Management), ISO 31000 (RisK Management),
-          Health and Safety (ISO 45001) and Environment (ISO 14001). We have developed specific tooIs, methodologies and approaches that help is delivering quicK, inexpensive and efficient Integrated ISO Implementations and Audits.</p>
+          <h1 class="display-5 fw-bold lh-1 mb-3"> Audit and Assurance Services for 30 ISO Standards:</h1>
+          <p class="lead">We strategically work with PECB (Accredited ISO Certification Body) in Canada to drive ISO
+            standards adoption across Africa. We also worK with various organization in different capacities with
+            regards to ISO
+            Implementations and Audits. Some of the ISO Standards we specialize in include 9001 (Quality), ISO 22301
+            (Business continuity), ISO 27001 (Information Security), ISO 20000 (IT service Management), ISO 31000 (Risk
+            Management),
+            Health and Safety (ISO 45001) and Environment (ISO 14001). We have developed specific tooIs, methodologies
+            and approaches that help is delivering quicK, inexpensive and efficient Integrated ISO Implementations and
+            Audits.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-           
+
           </div>
         </div>
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="./image/iso5.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
-            loading="lazy">
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-body">
-              <img src="https://img.icons8.com/color/100/undefined/mission-of-a-company.png" alt="" />
-              <h4 class="card-title fw-bold">Mission</h4>
-              <p class="card-text">To add significant value to organizations and people with every interaction.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-body">
-              <img src="https://img.icons8.com/color/100/undefined/vision.png" alt="" />
-              <h4 class="card-title fw-bold">Vision</h4>
-              <p class="card-text">To be a leading brand in the use and adoption of Standards and Best Practice for
-                Organizational Improvement.</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-body ">
-              <img src="https://img.icons8.com/color/100/undefined/leadership.png" alt=""/>
-              <h4 class="card-title fw-bold">Value</h4>
-              <p class="card-text">Competence, Leadership, Innovation, Professionalism
-                <b>(CLIP)</b>
-              </p>
-            </div>
-          </div>
+          <img src="./image/iso5.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy">
         </div>
       </div>
     </div>
   </article>
 
+  <div class="container-fluid bg-danger py-5">
+    <div class="container">
+      <figure class="h3 text-center text-white">
+        <strong>
+          OUR MISSION: <br>TO ADD SIGNIFICANT VALUE TO ORGANIZATIONS AND PEOPLE WITH EVERY INTERACTION.
+        </strong><br><br>
+        <strong class="text-uppercase">
+          OUR VISION:<br> To be a leading brand in the provisioning of Audit & Assurance Services for ISO Standards and Advisory & Assessment
+          Services of various international Best Practice.
+        </strong><br><br>
+        <strong class="text-uppercase">
+          OUR VALUE:<br> COMPETENCE, LEADERSHIP, INNOVATION, PROFESSIONALISM and EXCELLENCE (CLIPE)
+        </strong>
+      </figure>
+    </div>
+  </div>
 
-  
 
-  <section id="team" class="team section-bg py-5">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h1 class="display-4">A4S Geeks & Sages</h1>
-        <p>We hold A4s Together</p>
 
-      </div>
+
+ 
+
+  <section class="team-wrapper py-5">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-6 py-1 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="image/team(8).jpg" class="img-fluid rounded-3" alt="">
+        <div class="col-md-12 text-center text-light">
+          <div class="section-title">
+            <h2>Our Team</h2>
+            <p>We hold A4S Together</p>
+          </div>
+        </div>
+      </div>
 
-              <!-- Social Icon--->
-              <div class="social text-center py-3 fs-3">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
+      <div class="row">
+        <!-- Our Team Item start  -->
 
-              <!---Member info --->
-              <div class="member-info text-center">
-                <h4 class="fw-bold">Orlando Olumide Odejide</h4>
-                <span>Managing Partner</span>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="item-image">
+              <img src="./image/team(8).jpg" alt="" width="100%">
+            </div>
+            <div class="item-meta text-white">
+              <h3 class="item-title">Orlando Olumide Odejide</h3>
+              <h6 class="item-position">Managing Partner</h6>
             </div>
           </div>
         </div>
+        <!-- Our Team Item end  -->
+        <!-- Our Team Item start  -->
 
-        <!--2nd-->
-        <div class="col-lg-3 col-md-6 d-flex py-1 align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="image/team(7).jpg" class="img-fluid rounded-3" alt="">
-
-              <!-- Social Icon--->
-              <div class="social text-center py-3 fs-3">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-
-              <!---Member info --->
-              <div class="member-info text-center">
-                <h4 class="fw-bold">Larry Ansong</h4>
-                <span>Country Manager, Ghana<br>
-                  ISO 27001, 22301 Lead Auditor & PCIDSS Practitioner</span>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="item-image">
+              <img src="./image/team(7).jpg" alt="" width="100%">
+            </div>
+            <div class="item-meta text-white">
+              <h3 class="item-title">Larry Ansong</h3>
+              <h6 class="item-position">Country Manager, Ghana</h6>
+              <p style="font-size: 10px;">ISO 27001, 22301 Lead Auditor & PCIDSS Practitioner</p>
             </div>
           </div>
         </div>
+        <!-- Our Team Item end  -->
+        <!-- Our Team Item start  -->
 
-        <!---3rd-->
-        <div class="col-lg-3 col-md-6 d-flex py-1 align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="image/team(6).jpg" class="img-fluid rounded-3" alt="">
-
-              <!-- Social Icon--->
-              <div class="social text-center py-3 fs-3">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-
-              <!---Member info --->
-              <div class="member-info text-center">
-                <h4 class="fw-bold">Ayokunle Odedere</h4>
-                <span>Technical Services, Lead.<br> EC-Council CEH, CASE. <br>Java & ISO 27001 Lead Implementer</span>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="item-image">
+              <img src="./image/team(6).jpg" alt="" width="100%">
+            </div>
+            <div class="item-meta text-white">
+              <h3 class="item-title">Ayokunle Odedere</h3>
+              <h6 class="item-position">Technical Services, Lead.</h6>
+              <p style="font-size: 10px;">EC-Council CEH, CASE, Java & ISO 27001 Lead Implementer</p>
             </div>
           </div>
         </div>
+        <!-- Our Team Item end  -->
+        <!-- Our Team Item start  -->
 
-
-        <!--4th-->
-        <div class="col-lg-3 col-md-6 d-flex py-1 align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="image/team(5).jpg" class="img-fluid rounded-3" alt="">
-
-              <!-- Social Icon--->
-              <div class="social text-center py-3 fs-3">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-
-              <!---Member info --->
-              <div class="member-info text-center">
-                <h4 class="fw-bold">Bolaji Oyekan</h4>
-                <span>Audit Manager <br>
-                  ISO 27001 & 22301 Lead Auditor</span>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="item-image">
+              <img src="./image/team(5).jpg" alt="" width="100%">
+            </div>
+            <div class="item-meta text-white">
+              <h3 class="item-title">Bolaji Oyekan</h3>
+              <h6 class="item-position">Audit Manager</h6>
+              <p style="font-size: 10px;">ISO 27001 & 22301 Lead Auditor</p>
             </div>
           </div>
         </div>
+        <!-- Our Team Item end  -->
+        <!-- Our Team Item start  -->
 
-
-        <!--5th-->
-        <div class="col-lg-3 col-md-6 d-flex py-1 align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-              <img src="image/team(4).jpg" class="img-fluid rounded-3" alt="">
-
-              <!-- Social Icon--->
-              <div class="social text-center py-3 fs-3">
-                <a href=""><i class="fa fa-facebook " aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-
-              <!---Member info --->
-              <div class="member-info text-center">
-                <h4 class="fw-bold">Damilola Disu</h4>
-                <span>Project Manager <br>
-                  ISO 9001 & 27001 Lead Auditor</span>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="item-image">
+              <img src="./image/team(4).jpg" alt="" width="100%">
+            </div>
+            <div class="item-meta text-white">
+              <h3 class="item-title">Damilola Disu</h3>
+              <h6 class="item-position">Project Manager</h6>
+              <p style="font-size: 10px;">ISO 9001 & 27001 Lead Auditor</p>
             </div>
           </div>
         </div>
+        <!-- Our Team Item end  -->
+        <!-- Our Team Item start  -->
 
-
-        <!--6th-->
-        <div class="col-lg-3 col-md-6 d-flex py-1 align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <img src="image/team(3).jpg" class="img-fluid rounded-3" alt="">
-
-              <!-- Social Icon--->
-              <div class="social text-center py-3 fs-3">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-
-              <!---Member info --->
-              <div class="member-info text-center">
-                <h4 class="fw-bold">Richard Obediwe</h4>
-                <span>Brand Manager <br>
-                  ISO 9001 Lead Implementer</span>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="item-image">
+              <img src="./image/team(3).jpg" alt="" width="100%">
+            </div>
+            <div class="item-meta text-white">
+              <h3 class="item-title">Richard Obediwe</h3>
+              <h6 class="item-position">Brand Manager
+              </h6>
+              <p style="font-size: 10px;">ISO 9001 Lead Implementer</p>
             </div>
           </div>
         </div>
+        <!-- Our Team Item end  -->
+        <!-- Our Team Item start  -->
 
-        <!--7th-->
-        <div class="col-lg-3 col-md-6 d-flex py-1 align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="700">
-            <div class="member-img">
-              <img src="image/team(2).jpg" class="img-fluid rounded-3" alt="">
-
-              <!-- Social Icon--->
-              <div class="social text-center py-3 fs-3">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-
-              <!---Member info --->
-              <div class="member-info text-center">
-                <h4 class="fw-bold">Opeyemi Ogunsaki</h4>
-                <span>Finance Manager <br>
-                  ISO 9001 Lead Auditor</span>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-item" data-aos="fade-up" data-aos-delay="700">
+            <div class="item-image">
+              <img src="./image/team(2).jpg" alt="" width="100%">
+            </div>
+            <div class="item-meta text-white">
+              <h3 class="item-title">Opeyemi Ogunsaki</h3>
+              <h6 class="item-position">Finance Manager</h6>
+              <p style="font-size: 10px;">ISO 9001 Lead Auditor</p>
             </div>
           </div>
         </div>
+        <!-- Our Team Item end  -->
+        <!-- Our Team Item start  -->
 
-        <!-- 8th-->
-        <div class="col-lg-3 col-md-6 d-flex py-1 align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="800">
-            <div class="member-img">
-              <img src="image/innoc.jpg" class="img-fluid rounded-3" alt="">
-
-              <!-- Social Icon--->
-              <div class="social text-center py-3 fs-3">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </div>
-
-              <!---Member info --->
-              <div class="member-info text-center">
-                <h4 class="fw-bold">Innocent Akpareva</h4>
-                <span>Marketing Manager <br>
-                  ISO 9001 Lead Implementer</span>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="team-item" data-aos="fade-up" data-aos-delay="800">
+            <div class="item-image">
+              <img src="./image/innoc.jpg" alt="" width="100%">
+            </div>
+            <div class="item-meta text-white">
+              <h3 class="item-title">Innocent Akpareva</h3>
+              <h6 class="item-position">Marketing Manager</h6>
+              <p style="font-size: 10px;">ISO 9001 Lead Implementer</p>
             </div>
           </div>
         </div>
+        <!-- Our Team Item end  -->
 
       </div>
     </div>
   </section>
 
 
+  
 
+  <!---Footer -->
+  <footer class="footer-img text-white pt-5 pb-4">
 
-  <br>
+    <div class="container text-md-left" data-aos="slide-up">
 
-    <!---Footer -->
-    <footer class="bg-primary text-white pt-5 pb-4">
-      <div class="container text-center text-md-left" data-aos="slide-up">
-        <div class="row text-center text-md-left">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 fw-bold text-white">Audit, Advisory, Assurance and Assessment
-              Services (A4S)
-              Limited</h5>
-            <p>We solve business problems/Challenges using Best Practices Frameworks, ISO Standards & Technology
-              Solutions. We
-              truly guarantee transformational results</p>
-          </div>
-    
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 fw-bold text-white">A4s Online</h5>
-            <p>
-              <a href="about.html" class="text-white" style="text-decoration: none"> About Us</a>
-            </p>
-            <p>
-              <a href="services.html" class="text-white" style="text-decoration: none"> Services</a>
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none"> Partners</a>
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none">Contact</a>
-            </p>
-    
-          </div>
-    
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 fw-bold text-white">Useful Links</h5>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none">Blog</a>
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none">FAQs</a>
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none">Sponsors</a>
-            </p>
-            <p>
-              <a href="#" class="text-white" style="text-decoration: none">Help</a>
-            </p>
-          </div>
-    
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <div class="text-center text-md-right">
-              <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-facebook"
-                      aria-hidden="true"></i></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-twitter"
-                      aria-hidden="true"></i></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-linkedin"
-                      aria-hidden="true"></i></i></a>
-                </li>
-              </ul>
-            </div>
-    
-          </div>
-    
-          <hr class="mb-4">
-    
-          <div class="row align-items-center">
-    
-            <div class="col-md-7 col-lg-8">
-              <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2022 All rights reserved by:
-                <a href="#" style="text-decoration: none;">
-                  <strong class="text-white">A4S Online</strong>
-                </a>
-              </p>
-            </div>
-    
-            <div class="col-md-5 col-lg-4">
-              <a href="#" class="text-white">Back to top <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
-            </div>
-    
-          </div>
+      <hr>
+      <div class="row text-md-left">
+        <div class="col-md-6 col-lg-4 col-xl-6 mx-auto mt-3">
+          <h4 class="text-uppercase mb-4 fw-bold text-white">About Us</h4>
+          <p>We solve business problems/Challenges using Best Practices Frameworks, ISO Standards & Technology
+            Solutions. We truly guarantee transformational results</p>
+          <button type="button" class="btn btn-outline-light">Read More</button>
+
         </div>
-    </footer>
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold text-white">A4s Online</h5>
+          <p>
+            <a href="about.html" class="text-white" style="text-decoration: none"> About Us</a>
+          </p>
+          <p>
+            <a href="services.html" class="text-white" style="text-decoration: none"> Services</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none"> Partners</a>
+          </p>
+          <p>
+            <a href="contact.html" class="text-white" style="text-decoration: none">Contact</a>
+          </p>
+
+        </div>
+
+
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-facebook"
+                    aria-hidden="true"></i></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-twitter"
+                    aria-hidden="true"></i></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i></i></a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="row align-items-center">
+
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2022 All rights reserved by:
+              <a href="#" style="text-decoration: none;">
+                <strong class="text-white">A4S Online</strong>
+              </a>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-4">
+            <a href="#" class="text-white">Back to top <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+      </div>
+  </footer>
   <script>AOS.init();</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
