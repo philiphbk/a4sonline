@@ -1,6 +1,6 @@
 @import "/A4S/css/normalize.css";
 @import "servicestyle.css";
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 :root {
   --color-primary: #2584ff;
@@ -14,7 +14,7 @@
 }
 
 *{
-  font-family: 'Cabin', sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .hero {
