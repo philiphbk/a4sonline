@@ -43,8 +43,12 @@
 
 
 .footer-img {
-  background: linear-gradient(to top, #08070dba, #fa0707cc), url("../image/footed.jpg") no-repeat center;
+  background: linear-gradient(to top, #08070dba, #fa0707cc), url("../image/back.jpg") no-repeat center;
   background-size: cover;
+}
+
+.top-bar{
+  background-color: #f8f8ff;
 }
 
 .about-header {
@@ -57,7 +61,7 @@
 }
 
 .team-wrapper {
-  background: var(--color-headings);
+  background: rgb(235, 235, 241);
   padding: 50px 0px;
 }
 
@@ -72,7 +76,7 @@
 
 .team-item{
   position: relative;
-  background: #424248;
+  background: #c9c9d7;
   margin: 15px 5px;
   overflow: hidden;
   border-radius: 5px;
@@ -80,7 +84,7 @@
 
 .item-meta{
   position: absolute;
-  background: #5c5577;
+  background: #716f78;
   width: 100%;
   bottom: -35px;
   left: 0;
@@ -99,7 +103,7 @@
 }
 
 .item-meta h6 {
-  color: #ff8100;
+  color: #00ffee;
   font-size: 12px;
 }
 
@@ -108,8 +112,16 @@
 }
 
 .item-meta:hover img{
-  background: #ff8100;
+  background: #262321;
 } 
+
+.about-para{
+  font-size: small;
+}
+
+.about-head{
+  font-size: medium;
+}
 
 .service-icon {
   font-size: 50px;
