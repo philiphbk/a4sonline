@@ -55,6 +55,11 @@
   background: linear-gradient(to top, #08070dba, #fa0707cc), url("../image/book.jpg") no-repeat center;
   background-size: cover;
 }
+
+.jumbo{
+  background: linear-gradient(to top, #08070dba, #fa0707cc), url("../image/stamp.jpg") no-repeat center;
+    background-size: cover;
+}
 .services-header {
   background: linear-gradient(to top, #08070dba, #fa0707cc), url("../image/tower.jpg") no-repeat center;
   background-size: cover;
